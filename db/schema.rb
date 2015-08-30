@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150830111817) do
+ActiveRecord::Schema.define(version: 20150830151318) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20150830111817) do
     t.integer  "count"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "time_taken"
   end
 
   create_table "taggings", force: true do |t|

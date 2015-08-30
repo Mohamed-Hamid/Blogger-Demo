@@ -11,7 +11,7 @@ class Comment < ActiveRecord::Base
     body.split.count
   end
 
-  def self.total_word_count
+  def self.total_word_count 
     all.inject(0) {|total, a| total += a.word_count }
   end
 end

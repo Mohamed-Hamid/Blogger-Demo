@@ -29,6 +29,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.8)
     arel (5.0.1.20140414130214)
+    benchmark-ips (2.3.0)
     builder (3.2.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -47,6 +48,11 @@ GEM
       execjs
     coffee-script-source (1.9.1)
     database_cleaner (1.4.1)
+    delayed_job (4.0.6)
+      activesupport (>= 3.0, < 5.0)
+    delayed_job_active_record (4.0.3)
+      activerecord (>= 3.0, < 5.0)
+      delayed_job (>= 3.0, < 4.1)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.4.0)
@@ -185,9 +191,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  benchmark-ips
   capybara
   coffee-rails
   database_cleaner
+  delayed_job_active_record
   fabrication
   faker
   guard
